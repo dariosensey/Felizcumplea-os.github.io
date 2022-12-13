@@ -1,0 +1,106 @@
+
+* {
+    transition: all 0.2s ease-in-out;
+  }
+  
+  body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin: 0;
+
+    animation: BGcolorChanging-4colors 6s linear infinite alternate both;
+  }
+
+  @keyframes BGcolorChanging-4colors{
+
+    0%{
+      /* background-color: #3a1c1e; */
+      background-image: url(/Happy2/IMG/fondo-flores.webp);
+    }
+    33.333%{
+      /* background-color: #763031; */
+      background-image: url(/Happy2/IMG/fondo-playa.webp);
+    }
+    66.666%{
+      /* background-color: #7c3446; */
+      background-image: url(/Happy2/IMG/fondo-verano.webp);
+    }
+    100%{
+      /* background-color: #8f7aa4; */
+      background-image: url(/Happy2/IMG/fondo-helado.jpg);
+    }
+
+
+
+  }
+  
+  .carta {
+    background-image: url('/Happy2/IMG/flores.jpg');
+    border-radius: 5px;
+    height: 85vh;
+    width: 80vw;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    overflow: hidden;
+  }
+  
+  @media only screen and (min-width: 1000px) {
+    .carta {
+      flex-direction: row-reverse;
+    }
+    .carta img.cumpleaños {
+      width: 100%;
+      max-width: 50vw;
+      max-height: unset;
+    }
+  }
+  
+  @media only screen and (max-height: 640px) {
+    .carta {
+      flex-direction: row-reverse;
+    }
+    .carta img.cumpleaños {
+      width: 75%;
+      max-width: 25vw;
+      max-height: unset;
+    }
+  }
+  
+  img.cumpleaños {
+    max-height: 20vh;
+    /* max-height: 40vh; */
+    border-radius: 2%;
+  }
+  
+  .texto {
+    padding: 1em;
+    color: #e8e8e7;
+
+  }
+
+  .especial{
+    color: #ddc7c7;
+    /* font-family: 'Starfish', sans-serif; */
+    font-family: 'Miralight Demo', sans-serif;
+    font-size: 45px;
+  }
+  
+  .mensaje{
+    font-family: 'Stabillo', sans-serif;
+    font-size: 25px;
+  }
+
+  .agua {
+    opacity: 0.4;
+
+  }
+  
+  .espacio {
+    height: 100px;
+  }
